@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: attacker
+  namespace: other
+  labels:
+    app: attacker
+spec:
+  containers:
+    - name: netshoot
+      image: nicolaka/netshoot
+      command: ["sleep", "infinity"]
