@@ -16,6 +16,7 @@ up-cilium:
 
 	kubectl apply -f manifests/ --context kind-cilium
 
+	cilium hubble enable --ui --context kind-cilium
 
 
 down-baseline:
